@@ -27,8 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['user_id'] = $user['id'];
                 $_SESSION['username'] = $user['username'];
                 $_SESSION['is_admin'] = true;
-                echo"logou";
                 header('Location: index_adm.php');
+
                 exit;
             } else {
                 $error = 'Senha incorreta.';

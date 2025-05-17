@@ -4,9 +4,8 @@ require_once 'config/database.php';
 
 
 if (!isset($_SESSION['user_id'])) {
-    echo"teste";
-    // header('Location: login.php');
-    // exit;
+    header('Location: login.php');
+    exit;
 }
 
 
