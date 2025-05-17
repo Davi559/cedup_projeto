@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['username'] = $user['username'];
                 $_SESSION['is_admin'] = true;
 
-                header('Location: ./index_ADM.php');
+                header('Location: Index_ADM.php');
                 exit;
             } else {
                 $error = 'Senha incorreta.';
